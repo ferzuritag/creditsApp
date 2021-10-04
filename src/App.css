@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Main-Screen__screen{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(65, 83, 117);
+}
+
+.Main-Screen__form{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 2px;
+  box-shadow: -5px 5px #3333;
+}
+
+.Main-Screen__form > h1{
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: medium;
+  color: #333;
+}
+
+.Main-Screen__form *{
+  margin-bottom: 5px;
+}
+
+.Main-Screen__label{
+  display: inline-block;
+  width: 100px;
+  margin-right: 10px;
+  font-weight: lighter;
+  text-align: right;
+}
+
+.Main-Screen__span{
+  display: flex;
+  flex-direction: row;
+}
+
+.Main-Screen__select{
+  border: 1px solid gray;
+  border-radius: 2px;
+  background-color: lightgray;
+  padding: 2px;
+}
+
+.Main-Screen__input{
+  border: 1px solid gray;
+  padding: 2px;
+  transition: border .5s ease;
+}
+
+.Main-Screen__input:focus{
+  border: 1px solid green;
+  outline: none;
+  padding: 2px;
+}
+
+.Main-Screen__btn{
+  padding: 4px;
+  background-color: rgb(65, 83, 117);
+  color: white;
+  font-weight: medium;
+  font-size: .75rem;
+  cursor: pointer;
+  border: none;
+}
+
+.Main-Screen__btn:hover{
+  background-color: rgb(88, 109, 148);
+}
+
+.Register-Screen__main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(88, 109, 148);
+  border-radius: 2px;
+}
+
+.Register-Screen__credits-list{
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  align-items: center;
+  background-color: whitesmoke;
+} 
+
+.Register-Screen__credits-list > h1{
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.Register-Screen__credit-item{
+  margin-top: 5px;
+  padding: 10px 0px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.Register-Screen__credit-item:hover{
+  background-color: rgb(211, 220, 236);
+}
