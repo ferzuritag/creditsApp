@@ -6,11 +6,15 @@ export const getCredits = async () => {
     const querySnapshot = await getDocs(collection(db, "credits"));
     const docsArray = [];
     querySnapshot.forEach((doc) => {
-      docsArray.push(doc.data());
+      const data= doc.data();
+      docsArray.push({
+        id:doc.id,name:data.name,type:data.type,description:data.description
+      });
     });
-    console.log(docsArray);
+    
+    console.log(docsArray)
     return docsArray;
   } catch (e) {
-    return `Error al crear el credito ${e}`;
+    return `Error al obtener creditos: ${e}`;
   }
 }

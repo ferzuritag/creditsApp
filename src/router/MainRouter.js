@@ -4,20 +4,24 @@ import {
     Switch,
     Route,
   } from "react-router-dom";
+import { EditCredit } from '../components/EditCredit';
 import { MainScreen } from '../components/MainScreen';
 import { RegisterScreen } from '../components/RegisterScreen';
+import { NavBar } from '../components/ui/NavBar';
 export const MainRouter = () => {
     return (
         <div>
-            <Router>
+            
+                    
+            <NavBar/>
                 <div>
                     <Switch>
                         <Route exact path="/credits" component = {MainScreen}/>
+                        <Route exact path="/credits/:creditID" component = {EditCredit}/>
                         <Route path="/register" component = {RegisterScreen}/>
                         <Route path="/" component = {RegisterScreen}/>
                     </Switch>
                 </div>
-            </Router>
         </div>
     )
 }
