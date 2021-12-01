@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import { getCreditByID } from "../helpers/getCreditByID";
 import { CreditTypes } from "../infos/CreditTypes";
-import { delecteCredit, deleteCredit } from "../services/deleteCredit";
+import { deleteCredit } from "../services/deleteCredit";
 import { editCredit } from "../services/editCredit";
 
 export const EditCredit = ({ history }) => {

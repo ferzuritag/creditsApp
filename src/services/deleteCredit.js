@@ -3,9 +3,9 @@ import { db } from '../firebase/firebase'
 
 export const deleteCredit = async (id) => {
   try {
-    const docRef = await deleteDoc(doc(db, "credits", id));
+    await deleteDoc(doc(db, "credits", id));
     return `Credito borrado ${id}`;
   } catch (e) {
-    return `Error al borrar el credito ${e}`;
+    return `Error al crear el credito ${e}`;
   }
 }

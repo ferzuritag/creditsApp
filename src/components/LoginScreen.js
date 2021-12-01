@@ -1,15 +1,9 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { startGoogleLogin } from "../actions/auth";
-import { useForm } from "../hooks/useForm";
 
 export const LoginScreen = () => {
   const dispatch = useDispatch();
-  const [formValues, handleInputChange] = useForm({
-    email: "ferzuritag@hotmail.com",
-    password: "123455",
-  });
-  const { email, password } = formValues;
   const handleLogin = (e) => {
     e.preventDefault();
     dispatch(startGoogleLogin());

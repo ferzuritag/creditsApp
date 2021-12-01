@@ -10,7 +10,6 @@ export const NavBar = () => {
   }
   return (
     <div className="NavBar">
-        
       <h1>CreditsApp</h1>
       <div className="navigation">
         <Link className="NavBar-item flex-center" to="/register">Registrar</Link>
